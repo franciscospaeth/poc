@@ -1,0 +1,51 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>poc</groupId>
+		<artifactId>poc-parent</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>poc-app-base-meta</artifactId>
+	<packaging>pom</packaging>
+
+	<modules>
+		<module>poc-app-base-api</module>
+		<module>poc-app-base-core</module>
+		<module>poc-app-base-ioc</module>
+		<module>poc-app-datasource-api</module>
+		<module>poc-app-security-api</module>
+		<module>poc-view-loader-api</module>
+		<module>poc-app-base-util</module>
+	</modules>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>poc</groupId>
+				<artifactId>poc-app-datasource-api</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>poc</groupId>
+				<artifactId>poc-app-security-api</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>poc</groupId>
+				<artifactId>poc-app-base-api</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>poc</groupId>
+				<artifactId>poc-app-base-ioc</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>poc-app-adds</groupId>
+				<artifactId>poc-app-adds-datasource-bean</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+</project>
