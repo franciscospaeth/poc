@@ -1,7 +1,7 @@
 Unified Component Collection
 ============================
 
-The main idea behind Unified Component Collection is the ability to implement an application prototype that can be deployed to different envoriments and different front-end frameworks.
+The main idea behind Unified Component Collection is the ability to implement an application prototype that can be deployed to different environments and different front-end frameworks.
 
 Current implementation supports Vaadin and draft implementation for Swing is available.
 
